@@ -34,6 +34,7 @@ class Coach extends Component {
                                         goals.map((g)=>{
                                             return(
                                                 <>
+                                                <button type="button" className="btn btn-normal">
                                                     <div  className="row w3-padding" key={g.id}>
                                                         <div className="col-7">
                                                             <h6 className="weight">{g.title}</h6>
@@ -43,6 +44,9 @@ class Coach extends Component {
                                                         </div>
                                                     </div>
                                                     <div class="dropdown-divider"></div>
+                                                </button>
+                                                    
+                                                    
                                                  </>
                                             );
                                         })

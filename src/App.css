@@ -61,6 +61,14 @@ p{
     background-color: rebeccapurple;
 }
 
+.btn-primary:focus{
+    background-color: rebeccapurple;
+}
+
+.btn-primary:active{
+    background-color: rebeccapurple;
+}
+
 .btn-success{
     border-radius: 50%;
     width: 70px;
@@ -147,7 +155,7 @@ h4{
 }
 
 #goals{
-    height: 280px;
+    height: 289px;
     width: 350px;
     border: 4px solid grey;
     border-radius: 20px;
@@ -161,3 +169,29 @@ h4{
     width: 5.5vw;
     color: gray;
 }
+
+a{
+    color: gray;
+}
+
+.lnk{
+    color: #007bff;
+}
+
+.dp{
+    top: 10px;
+}
+
+a.stab:focus{
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+
+.btn-normal{
+    border-radius: 20px;
+    width: 344px;
+    height: 56px;
+    text-align: left;
+}
+
+

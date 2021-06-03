@@ -40,7 +40,7 @@ class Account extends Component {
                                     </div>
                                     <div className="col-8">
                                     <div className="custom-control custom-switch">
-                                        <input type="checkbox" className="custom-control-input" id={tab.field}/>
+                                        <input type="checkbox" className="custom-control-input" checked="true" id={tab.field}/>
                                         <label className="custom-control-label" for={tab.field}></label>
                                     </div>
                                     </div>

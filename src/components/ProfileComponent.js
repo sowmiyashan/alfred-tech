@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'reactstrap'
+import { NavLink } from 'react-router-dom'
 import { Tabs } from '../shared/dispData'
 
 
@@ -13,7 +13,7 @@ class Profile extends Component {
                     </div>
                     <div className="col-8">
                         <h4>HerculusMunda</h4>
-                        <a href="/" className="weight">VIEW YOUR PROFILE</a>
+                        <a href="/" className="weight lnk">VIEW YOUR PROFILE</a>
                     </div>
                 </div>
 
@@ -22,7 +22,7 @@ class Profile extends Component {
                         return(
                             <div className="row w3-padding-large" key={tab.id}>
                                 <div className="col-12">
-                                    <NavLink className="nav-link" to={"/"+tab.title}>
+                                    <NavLink className="stab nav-link w3-text-black" to={"/"+tab.title}>
                                         <span className="weight">{tab.title}</span>
                                     </NavLink>
                                 </div>

@@ -12,9 +12,9 @@ class Main extends Component {
                 <Router>
                     <Header/>
                     <Switch>
-                        <Route exact path="/" component={Learn}/>
                         <Route exact path="/Account" component={Account}/>
                         <Route exact path="/Coach" component={Coach}/>
+                        <Route path="/" component={Learn}/>
                     </Switch>
                 </Router>
                 

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavLink} from 'reactstrap'
-// import { NavLink } from 'react-router-dom'
+import { Navbar, Nav, NavItem} from 'reactstrap'
+import { NavLink } from 'react-router-dom'
 import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Button from 'react-bootstrap/Button';
 import { droptabs } from '../shared/dispData'
 
 
@@ -18,7 +17,7 @@ class Header extends Component {
                         Notifications
                     </div>
                     <div className="col-4">
-                        <a href="/" id="see">SEE ALL</a>
+                        <a href="/" className="lnk">SEE ALL</a>
                     </div>
                 </Popover.Content>
                 <div class="dropdown-divider"></div>
@@ -32,7 +31,7 @@ class Header extends Component {
                 </Popover.Content>
                 <div class="dropdown-divider"></div>
                 <Popover.Content>
-                    Account
+                    <NavLink to="/Account"><a  href="/Account" className="w3-text-black">Account</a></NavLink>
                 </Popover.Content>
                 {
                     droptabs.map((dt) =>{
@@ -40,7 +39,7 @@ class Header extends Component {
                             <>
                                 <div class="dropdown-divider"></div>
                                 <Popover.Content>
-                                    <a href={"/"+dt.tab}>{dt.tab}</a>
+                                    <a className="lnk" href={"/"+dt.tab}>{dt.tab}</a>
                                 </Popover.Content>
                             </>
                         );
@@ -62,17 +61,17 @@ class Header extends Component {
                                         </NavLink>
                                     </NavItem>
                                     <NavItem className="link">
-                                        <NavLink className="nav-link " to="/learn">
+                                        <NavLink className="nav-link " to="/stories">
                                             <span className="fa fa-leanpub fa-lg"></span> STORIES
                                         </NavLink>
                                     </NavItem>
                                     <NavItem className="link">
-                                        <NavLink className="nav-link " to="/learn">
+                                        <NavLink className="nav-link " to="/shop">
                                             <span className="fa fa-building fa-lg"></span> SHOP
                                         </NavLink>
                                     </NavItem>
                                     <NavItem className="link">
-                                        <NavLink className="nav-link " to="/learn">
+                                        <NavLink className="nav-link " to="/more">
                                             <span className="fa fa-ellipsis-h fa-lg"></span> MORE
                                         </NavLink>
                                     </NavItem>
@@ -99,11 +98,11 @@ class Header extends Component {
                                         </NavLink>
                                     </NavItem>
                                     <NavItem className="l-icons ">
-                                        <NavLink className="nav-link " to="/learn">
+                                        <button type="button" className="btn">
                                             <OverlayTrigger trigger="click" data-trigger="focus" placement="bottom" overlay={popover}>
                                                 <a><span className="fa fa-header fa-lg"></span></a>
                                             </OverlayTrigger>
-                                        </NavLink>
+                                        </button>
                                     </NavItem>
                                 </Nav>
                             </div>
