@@ -194,4 +194,7 @@ a.stab:focus{
     text-align: left;
 }
 
+.invalid-feedback{
+    display: initial;
+}
 

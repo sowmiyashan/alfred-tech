@@ -25,7 +25,8 @@ class Account extends Component {
                                             <p className="weight">{tab.field}</p>
                                         </div>
                                         <div className="col-8">
-                                            <input type="text" class="form-control" id="usr" name="username"/>
+                                            <input type="text" defaultValue={(tab.id ==1) ? "HerculusMunda" : "hercu03@gmail.com"} class="form-control" id="usr" name="username"/>
+                                            {(tab.id == 2 ? <div class="invalid-feedback">Email not verified <a className="w3-text-red" href="/Account">Verify Now</a></div> : <></>)}
                                         </div>
                                     </div>
                                 );
