@@ -26,7 +26,7 @@ class Coach extends Component {
                         </div>
                         <div className="row w3-padding-24">
                             <div className="col-5">
-                               <img src="./bird.svg" width="250px" height="300px"/>
+                               <img src="./bird.svg" alt="pic" width="250px" height="300px"/>
                             </div>
                             <div className="col-7">
                                 <div id="goals">
@@ -43,7 +43,7 @@ class Coach extends Component {
                                                             <p>{g.goal} XP per Day</p>
                                                         </div>
                                                     </div>
-                                                    <div class="dropdown-divider"></div>
+                                                    <div className="dropdown-divider"></div>
                                                 </button>
                                                     
                                                     

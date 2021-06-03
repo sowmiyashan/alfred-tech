@@ -12,11 +12,11 @@ export const textField =[
 ]
 
 export const toggleField = [
-    {'id':1,'field':'Sound Effects'},
-    {'id':2,'field':'Animations'},
-    {'id':3,'field':'Motivational messages'},
-    {'id':4,'field':'Speaking Exercises'},
-    {'id':5,'field':'Listening Exercises'}
+    {'id':1,'field':'Sound Effects','name':'sound'},
+    {'id':2,'field':'Animations','name':'animations'},
+    {'id':3,'field':'Motivational messages','name':'moti'},
+    {'id':4,'field':'Speaking Exercises','name':'speak'},
+    {'id':5,'field':'Listening Exercises','name':'listen'}
 ]
 
 export const goals = [

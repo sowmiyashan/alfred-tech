@@ -13,7 +13,7 @@ class Account extends Component {
                                 <h3>Account Settings</h3>
                             </div>
                             <div className="col-2">
-                                <button type="button" class="btn btn-secondary btn-lg">Save changes</button>
+                                <button type="button" className="btn btn-secondary btn-lg">Save changes</button>
                             </div>
                         </div>
                         <div className="w3-padding-24"></div>
@@ -25,8 +25,8 @@ class Account extends Component {
                                             <p className="weight">{tab.field}</p>
                                         </div>
                                         <div className="col-8">
-                                            <input type="text" defaultValue={(tab.id ==1) ? "HerculusMunda" : "hercu03@gmail.com"} class="form-control" id="usr" name="username"/>
-                                            {(tab.id == 2 ? <div class="invalid-feedback">Email not verified <a className="w3-text-red" href="/Account">Verify Now</a></div> : <></>)}
+                                            <input type="text" defaultValue={(tab.id ===1) ? "HerculusMunda" : "hercu03@gmail.com"} className="form-control" id="usr" name="username"/>
+                                            {(tab.id === 2 ? <div className="invalid-feedback">Email not verified <a className="w3-text-red" href="/Account">Verify Now</a></div> : <></>)}
                                         </div>
                                     </div>
                                 );

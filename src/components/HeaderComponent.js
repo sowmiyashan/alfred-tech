@@ -29,7 +29,7 @@ class Header extends Component {
                         You lost your wager. Better luck next time!
                     </div>
                 </Popover.Content>
-                <div class="dropdown-divider"></div>
+                <div className="dropdown-divider"></div>
                 <Popover.Content>
                     <NavLink to="/Account"><a  href="/Account" className="w3-text-black">Account</a></NavLink>
                 </Popover.Content>
@@ -37,7 +37,7 @@ class Header extends Component {
                     droptabs.map((dt) =>{
                         return(
                             <>
-                                <div class="dropdown-divider"></div>
+                                <div className="dropdown-divider"></div>
                                 <Popover.Content>
                                     <a className="lnk" href={"/"+dt.tab}>{dt.tab}</a>
                                 </Popover.Content>
@@ -100,7 +100,7 @@ class Header extends Component {
                                     <NavItem className="l-icons ">
                                         <button type="button" className="btn">
                                             <OverlayTrigger trigger="click" data-trigger="focus" placement="bottom" overlay={popover}>
-                                                <a><span className="fa fa-header fa-lg"></span></a>
+                                                <span className="fa fa-header fa-lg"></span>
                                             </OverlayTrigger>
                                         </button>
                                     </NavItem>
